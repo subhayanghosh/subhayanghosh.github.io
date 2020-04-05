@@ -3,7 +3,7 @@ body{
 }
 
 #container{
-    width: 1050px;
+    width: 100%;
     /* border: 1px solid grey; */
     margin: 0 auto;
 }
@@ -126,7 +126,7 @@ ul{
 
 .sidebar{
     height: 500px;
-    width: 450px;
+    width: 45%;
     border: #BAF46F 1px solid;
     border-radius: 20px;
     padding: 10px 30px;
