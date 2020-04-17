@@ -1,0 +1,210 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #1C1B23;
+    width: 100%;
+}
+
+#brand{
+    padding-left: 5vw;
+    padding-right: 21.2vw;
+}
+
+#brand a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.97vw;
+    font-weight: 600;
+    padding-right: 2.5vw;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover{
+    color: #BF0100;
+}
+
+#register{
+    background-color: white;
+    padding: 1vw 2vw;
+    margin-left: 9vw;
+    margin-top: 1.15vw;
+    margin-bottom: 1.15vw;
+    border: none;
+    border-radius: 0.3vw;
+    color: #C41716;
+    font-size: 1vw;
+    font-weight: 500;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+#register:hover{
+    background-color: #BF0100;
+    color: white;
+}
+
+#introduction{
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url(images/intro.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.introParagraph{
+    padding-left: 11vw;
+}
+
+#introParagraph1{
+    padding-top: 16.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0;
+    color: #9C9C9C;
+}
+
+#introParagraph2{
+    font-size: 5vw;
+    font-weight: bolder;
+    margin: 0;
+    color: black;
+}
+
+#introParagraph3{
+    font-size: 5vw;
+    font-weight: bolder;
+    margin: 0;
+    color: black;
+}
+
+#subintro{
+    margin-top: 5.75vw;
+    background-color: #DA0000;
+    padding-left: 12vw;
+    padding-top: 3.2vw;
+    padding-bottom: 2.8vw;
+    width: 27%;
+}
+
+#message{
+    margin: 0;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: white;
+}
+
+#number{
+    margin: 0;
+    font-size: 2.8vw;
+    font-weight: bolder;
+    color: white;
+}
+
+#legalPracticeArea{
+    display: flex;
+    flex-flow: column;
+    padding: 10vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lprHeading{
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+}
+
+#animation{
+    background-color: #DA0000;
+    width: 10%;
+    height: 0.3vw;
+    border-radius: 0.12vw;
+}
+
+#whiteBox{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    -webkit-animation: divider1 4s infinite linear;
+}
+
+@-webkit-keyframes divider1{
+    from{left: 0%}
+    to{left: 100%}
+}
+
+#lprBody{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    padding-top: 4vw;
+}
+
+.body{
+    width: 24.5%;
+    height: 20%;
+    margin: 0.9vw;
+    background-color: #FCFCFC;
+    position: relative;
+}
+
+.image{
+    margin-bottom: 1.6vw;
+}
+
+.body a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0 2vw;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.body p{
+    color: #76797D;
+    padding: 0 2vw;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.heartIcon{
+    position: absolute;
+    padding: 1.5vw 1.3vw;
+    left: 18vw;
+    top: 12.6vw;
+    width: 2vw;
+    height: 2vw;
+    background-color:white;
+    font-size: 2vw;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+

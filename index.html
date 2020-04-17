@@ -2,72 +2,104 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Maths Website</title>
+        <title>Just Law</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="container">
+        <div class="flex-container">
             <div id="header">
                 <div id="brand">
-                    <h1><a href="#">Maths the Fun Way</a></h1>
+                    <a href="#">Just Law</a>
                 </div>
-                <div id="searchBox">
-                    <form method="get">
-                        <input type="text" class="text">
-                        <input type="submit" value="Search a topic" class="submit">
-                    </form>
+                <div id="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pages</a>
                 </div>
-                <div class="clear"></div>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Online Tutorials</a></li>
-                    <li><a href="#">Get A Private Tutor</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <button id="register">LOGIN / SIGN UP</button>
             </div>
             <div id="introduction">
-                <h3>Do you need help with Maths?</h3>
-                <p>Our website uses an interactive methodology of teaching Maths using the latest web technologies. Your learning experience with us is guaranteed to be intuitive and fun. You will have fun while learning. This is the secret of our outstanding results. Check reviews from our students.</p>
-            </div>
-            <div id="leftsidebar" class="sidebar">
-                <h3>Go to:</h3>
-                <ul>
-                    <li><a href="#">Year 1 Free Lessons.</a></li>
-                    <li><a href="#">Year 2 Free Lessons.</a></li>
-                    <li><a href="#">Year 3 Free Lessons.</a></li>
-                    <li><a href="#">Year 4 Free Lessons.</a></li>
-                    <li><a href="#">Year 5 Free Lessons.</a></li>
-                    <li><a href="#">Year 6 Free Lessons.</a></li>
-                    <li><a href="#">Year 7 Free Lessons.</a></li>
-                    <li><a href="#">Year 8 Free Lessons.</a></li>
-                    <li><a href="#">Year 9 Free Lessons.</a></li>
-                    <li><a href="#">Year 10 Free Lessons.</a></li>
-                    <li><a href="#">Year 11 Free Lessons.</a></li>
-                    <li><a href="#">Year 12 Free Lessons.</a></li>
-                </ul>
-            </div>
-            <div id="rightsidebar" class="sidebar">
-                <h3>Why us?</h3>
-                <ul>
-                    <li><a href="#">Our teachers are available any time.</a></li>
-                    <li><a href="#">Available on laptop, Tablets and Phones.</a></li>
-                    <li><a href="#">30 day Money Back Guarantee..</a></li>
-                    <li><a href="#">Interactive games for an enjoyable learning experience.</a></li>
-                    <li><a href="#">Learn at your own pace.</a></li>
-                    <li><a href="#">Complete curriculum.</a></li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-            <footer class="footer">
-                <div>
-                    <p>Subhayan Ghosh. Copyright &copy; 2020<br/>Created my free logo at <a href="http://logomakr.com/">LogoMakr.com</a></p>
+                <p class="introParagraph" id="introParagraph1">Professional Lawyers</p>
+                <p class="introParagraph" id="introParagraph2"><b>We Will Fight</b></p>
+                <p class="introParagraph" id="introParagraph3"><b>For You Like A Friend</b></p>
+                <div id="subintro">
+                    <p id="message">Schedule a Free Consultation 24/7</p>
+                    <p id="number">01654.066.456</p>
                 </div>
-            </footer>
+            </div>
+            <div id="legalPracticeArea">
+                <p id="lprHeading">Legal Practice Area.</p>
+                <div id="animation"><span id="whiteBox">&nbsp;&nbsp;</span></div>
+                <div id="lprBody">
+                    <div class="body" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)">
+                        <div class="image">
+                            <img src="images/vehicle.jpg" width="100%" height="100%">
+                            <div class="heartIcon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                        </div>
+                        <a href="#">Vehicle Accident</a>
+                        <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="body" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)">
+                        <div  class="image">
+                            <img src="images/health.jpg" width="100%" height="100%">
+                            <div class="heartIcon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                        </div>
+                        <a href="#">Health Law</a>
+                        <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="body" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)">
+                        <div  class="image">
+                            <img src="images/insurance.jpg" width="100%" height="100%">
+                            <div class="heartIcon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                        </div>
+                        <a href="#">Insurance Law</a>
+                        <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tem incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="aboutJustLaw">
+                <div id="ajlBody">
+
+                </div>
+                <div id="ajlImage">
+
+                </div>
+            </div>
         </div>
+
+        <script>
+            var a;
+            function changeColor(a){
+                var b = a.children;
+                var c = b[0].children;
+                c[1].style.backgroundColor = "#DA0000";
+                c[1].style.color = "#FFFFFF";
+                c[1].style.left = "18vw";
+                c[1].style.top = "13.5vw";
+                b[1].style.color = "#DA0000";
+            }
+            function changeBackColor(a){
+                var b = a.children;
+                var c = b[0].children;
+                c[1].style.backgroundColor = "#FFFFFF";
+                c[1].style.color = "#000000";
+                c[1].style.left = "18vw";
+                c[1].style.top = "12.6vw";
+                b[1].style.color = "#000000";
+            }
+        </script>
     </body>
 </html>
