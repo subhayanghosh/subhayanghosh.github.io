@@ -25,6 +25,7 @@
                 </div>
                 <button id="register">LOGIN / SIGN UP</button>
             </div>
+
             <div id="introduction">
                 <p class="introParagraph" id="introParagraph1">Professional Lawyers</p>
                 <p class="introParagraph" id="introParagraph2"><b>We Will Fight</b></p>
@@ -34,6 +35,7 @@
                     <p id="number">01654.066.456</p>
                 </div>
             </div>
+
             <div id="legalPracticeArea">
                 <p id="lprHeading">Legal Practice Area.</p>
                 <div id="animation"><span id="whiteBox">&nbsp;&nbsp;</span></div>
@@ -70,6 +72,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="aboutJustLaw" onmousewheel="counter()">
                 <div id="ajlBody">
                     <p id="aboutParagraph1">About Just Law</p>
@@ -93,20 +96,35 @@
                     <img id="image2" src="images/about2.jpg" width="52%" height="55%">
                 </div>
             </div>
+
             <div id="registration">
                 <div id="consultation">
                     <p>Free Consultation</p>
                     <div id="animation2"></div>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="text" name="phone" id="phone" placeholder="Phone">
-                    <select name="service" id="service">
-                        <option value="Vehicle Accident">Vehicle Accident</option>
-                        <option value="Health Law">Health Law</option>
-                        <option value="Insurance Law">Insurance Law</option>
-                    <input type="text" name="email" id="email" placeholder="Email">
-                    <textarea rows="4" cols="40" name="comments" id="comments" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Submit">
+                    <form method="get">
+                        <div id="nameAndPhone">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="phone" id="phone" placeholder="Phone">
+                        </div>
+                        <div id="serviceAndEmail">
+                            <select name="service" id="service">
+                                <option value="Vehicle Accident">Vehicle Accident</option>
+                                <option value="Health Law">Health Law</option>
+                                <option value="Insurance Law">Insurance Law</option>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <textarea rows="3" cols="40" name="comments" id="comments" placeholder="Your Message"></textarea>
+                        <input id="submit" type="submit" value="Submit Now">
+                    </form>
                 </div>
+            </div>
+
+            <div>
+                
+            </div>
+
+            <div id="review">
+                
             </div>
         </div>
 
@@ -121,6 +139,7 @@
                 c[1].style.top = "13.5vw";
                 b[1].style.color = "#DA0000";
             }
+
             function changeBackColor(a){
                 var b = a.children;
                 var c = b[0].children;
@@ -130,6 +149,7 @@
                 c[1].style.top = "12.6vw";
                 b[1].style.color = "#000000";
             }
+
             var stop = 0;
             function counter(){
                 if(stop == 0){
