@@ -176,14 +176,14 @@ body{
 
 .image{
     margin-bottom: 1.6vw;
-    /* width: 24vw;
-    height: 19vw; */
-}
-
-/* .image img{
     width: 24vw;
     height: 19vw;
-} */
+}
+
+.image img{
+    width: 24vw;
+    height: 19vw;
+}
 
 .body a{
     text-decoration: none;
