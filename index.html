@@ -25,7 +25,6 @@
                 </div>
                 <button id="register">LOGIN / SIGN UP</button>
             </div>
-
             <div id="introduction">
                 <p class="introParagraph" id="introParagraph1">Professional Lawyers</p>
                 <p class="introParagraph" id="introParagraph2"><b>We Will Fight</b></p>
@@ -35,7 +34,6 @@
                     <p id="number">01654.066.456</p>
                 </div>
             </div>
-
             <div id="legalPracticeArea">
                 <p id="lprHeading">Legal Practice Area.</p>
                 <div id="animation"><span id="whiteBox">&nbsp;&nbsp;</span></div>
@@ -72,7 +70,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="aboutJustLaw" onmousewheel="counter()">
                 <div id="ajlBody">
                     <p id="aboutParagraph1">About Just Law</p>
@@ -96,7 +93,6 @@
                     <img id="image2" src="images/about2.jpg" width="52%" height="55%">
                 </div>
             </div>
-
             <div id="registration">
                 <div id="consultation">
                     <p>Free Consultation</p>
@@ -118,13 +114,83 @@
                     </form>
                 </div>
             </div>
-
-            <div>
-                
+            <div id="teamMates">
+                <p id="tmHeading">Team Mates</p>
+                <div id="animation3"><span id="whiteBox3">&nbsp;&nbsp;</span></div>
+                <div id="tmBody">
+                    <div class="memberDetails">
+                        <div class="memberImage">
+                            <img src="images/tm1.jpg" width="100%" height="100%">
+                        </div>
+                        <a href="#">Jhon Smith</a>
+                        <p>Senior Lawyer</p>
+                    </div>
+                    <div class="memberDetails">
+                        <div  class="memberImage">
+                            <img src="images/tm2.jpg" width="100%" height="100%">
+                        </div>
+                        <a href="#">Emma Bunton</a>
+                        <p>Professional Lawyer</p>
+                    </div>
+                    <div class="memberDetails">
+                        <div  class="memberImage">
+                            <img src="images/tm3.jpg" width="100%" height="100%">
+                        </div>
+                        <a href="#">Bunton Jonathon</a>
+                        <p>Top Rated Lawyer</p>
+                    </div>
+                </div>
             </div>
-
-            <div id="review">
-                
+            <div id="blog">
+                <p id="blogHeading">Words From Clients</p>
+                <div id="animation4"><span id="whiteBox4">&nbsp;&nbsp;</span></div>
+                <div id="reviews">
+                    <div id="review1" class="review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <p>quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <div class="authorImage">
+                            <img src="images/author.jpg" height="100%" width="100%">
+                        </div>
+                        <p class="authorName">David Jonathan</p>   
+                    </div>
+                    <div id="review2" class="review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <p>quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <div class="authorImage">
+                            <img src="images/author.jpg" height="100%" width="100%">
+                        </div>
+                        <p class="authorName">David Jonathan</p>   
+                    </div>
+                    <div id="review3" class="review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <p>quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <div class="authorImage">
+                            <img src="images/author.jpg" height="100%" width="100%">
+                        </div>
+                        <p class="authorName">David Jonathan</p>   
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <button class="tab"></button>
+                    </li>
+                    <li>
+                        <button class="tab"></button>
+                    </li>
+                    <li>
+                        <button class="tab"></button>
+                    </li>
+                </ul>
+            </div>
+            <div id="preFooter">
+                <div id="loan">
+                    <h2>Get Your Answer In Just 5 Minutes</h2>
+                    <p>Checking your loan options does not affect your credit scores!</p>
+                </div>
+                <button id="getStarted">GET STARTED >></button>
             </div>
         </div>
 
@@ -136,20 +202,18 @@
                 c[1].style.backgroundColor = "#DA0000";
                 c[1].style.color = "#FFFFFF";
                 c[1].style.left = "18vw";
-                c[1].style.top = "13.5vw";
+                c[1].style.top = "14.5vw";
                 b[1].style.color = "#DA0000";
             }
-
             function changeBackColor(a){
                 var b = a.children;
                 var c = b[0].children;
                 c[1].style.backgroundColor = "#FFFFFF";
                 c[1].style.color = "#000000";
                 c[1].style.left = "18vw";
-                c[1].style.top = "12.6vw";
+                c[1].style.top = "14vw";
                 b[1].style.color = "#000000";
             }
-
             var stop = 0;
             function counter(){
                 if(stop == 0){
@@ -162,6 +226,18 @@
                     stop = 1;
                 }
                 window.console.log(stop);
+            }
+            function display1(){
+                document.getElementById("review2").style.display = "none";
+                document.getElementById("review3").style.display = "none";
+            }
+            function display2(){
+                document.getElementById("review1").style.display = "none";
+                document.getElementById("review3").style.display = "none";
+            }
+            function display3(){
+                document.getElementById("review1").style.display = "none";
+                document.getElementById("review2").style.display = "none";
             }
         </script>
     </body>

@@ -56,6 +56,7 @@ body{
     color: #C41716;
     font-size: 1vw;
     font-weight: 500;
+    cursor: pointer;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
@@ -175,7 +176,14 @@ body{
 
 .image{
     margin-bottom: 1.6vw;
+    /* width: 24vw;
+    height: 19vw; */
 }
+
+/* .image img{
+    width: 24vw;
+    height: 19vw;
+} */
 
 .body a{
     text-decoration: none;
@@ -199,7 +207,7 @@ body{
     position: absolute;
     padding: 1.519vw 1.3vw;
     left: 18vw;
-    top: 12.6vw;
+    top: 14vw;
     width: 2vw;
     height: 2vw;
     background-color:white;
@@ -437,14 +445,247 @@ body{
     color: white;
 }
 
-#review{
+#teamMates{
     display: flex;
+    flex-flow: column wrap;
+    width: 100%;
     justify-content: center;
-    padding: ;
+    align-items: center;
+}
+
+#tmHeading{
+    margin-top: 12vw;
+    margin-bottom: 2.3vw;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+}
+
+#animation3{
+    background-color: #DA0000;
+    width: 10%;
+    height: 0.3vw;
+    border-radius: 0.13vw;
+}
+
+#whiteBox3{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    -webkit-animation: divider3 4s infinite linear;
+}
+
+@-webkit-keyframes divider3{
+    from{left: 0%}
+    to{left: 100%}
+}
+
+#tmBody{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    padding-top: 4vw;
+    padding-bottom: 11vw;
+}
+
+.memberDetails{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 24.5%;
+    height: 20%;
+    margin: 0.9vw;
+    background-color: #FCFCFC;
+}
+
+.memberImage{
+    margin-bottom: 0.5vw;
+}
+
+.memberDetails a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 600;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    margin: 0;
+}
+
+.memberDetails a:hover{
+    color: #DA0000;
+}
+
+.memberDetails p{
+    color: black;
+    font-weight: 600;
+    font-size: 1vw;
+    margin: 0.2vw 0 0 0;
+}
+
+#blog{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50vw;
+    padding-bottom: 4vw;
     background-image: url(images/review.jpg);
-    opacity: 0.8;
     background-size: 100% 100%;
+    color: white;
+}
+
+#blogHeading{
+    margin-bottom: 2vw;
+    font-size: 3.3vw;
+    font-weight: bolder;
+    color: white;
+}
+
+#animation4{
+    background-color: #DA0000;
+    width: 10%;
+    height: 0.3vw;
+    border-radius: 0.13vw;
+}
+
+#whiteBox4{
+    display: inline-block;
+    height: 0.3vw;
+    background-color: white;
+    position: relative;
+    -webkit-animation: divider4 4s infinite linear;
+}
+
+@-webkit-keyframes divider4{
+    from{left: 0%}
+    to{left: 95%}
+}
+
+#reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.review{
+    padding-top: 3.5vw;
+    padding-bottom: 1vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review p{
+    margin: 0.3vw 0;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.authorImage{
+    width: 5vw;
+    height: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 1.3vw;
+}
+
+.authorImage img{
+    border-radius: 100%;
+}
+
+.authorName{
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
+#blog ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#blog ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.tab{
+    padding: 0;
+    width: 0.65vw;
+    height: 0.65vw;
+    margin: 0 0.25vw;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    opacity: 0.3;
+}
+
+#review1{
+    
+}
+
+#review2{
+    display: none;
+}
+
+#review3{
+    display: none;
+}
+
+#preFooter{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #DA0000;
+}
+
+#loan{
+    display: flex;
+    flex-flow: column wrap;
+    color: white;
+    padding: 6vw 0;
+    margin-left: 12vw;
+    margin-right: 20vw;
+}
+
+#loan h2{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+
+#loan p{
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#getStarted{
+    padding: 1.3vw 2vw;
+    border: none;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    font-weight: 600;
+    color: #DA0000;
+    margin-right: 3vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#getStarted:hover{
+    background-color: #010B1D;
     color: white;
 }
