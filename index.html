@@ -192,6 +192,43 @@
                 </div>
                 <button id="getStarted">GET STARTED >></button>
             </div>
+            <div id="footer">
+                <div id="companyDetails">
+                    <p id="logo">Just Law</p>
+                    <p id="moto">Seddo eiusmod tempor incididunt ut labore<br/>et dolore magna aliqua. consectetur pisicin<br/>elit, sed do eiusmod tempor.</p>
+                    <div id="cdLinks">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="links" id="company">
+                    <p>Company</p>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Home</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">About Us</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Browse Pets</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Blog</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Contact Us</a>
+                </div>
+                <div class="links" id="services">
+                    <p>Services</p>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">O’Connor Group</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Our Business Model</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Our Lawyers Team</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Most Recent Cases</a>
+                    <a href="#" onmouseover="shiftX(this)" onmouseout="shiftBackX(this)">Hot Lawyers News</a>
+                </div>
+                <div id="newsletter">
+                    <p id="nlHeading">Newsletter</p>
+                    <p id="nlMessage">For Lastest update Sign up here</p>
+                    <form method="get">
+                        <input type="email" name="email" id="getEmail" placeholder="Email Address">
+                        <br/>
+                        <input type="submit" id="subscribe" value="SUBSCRIBE >>">
+                    </form>
+                </div>
+            </div>
         </div>
 
         <script>
@@ -238,6 +275,13 @@
             function display3(){
                 document.getElementById("review1").style.display = "none";
                 document.getElementById("review2").style.display = "none";
+            }
+            var l;
+            function shiftX(l){
+                l.style.left = "0.4vw";
+            }
+            function shiftBackX(l){
+                l.style.left = "0vw";
             }
         </script>
     </body>

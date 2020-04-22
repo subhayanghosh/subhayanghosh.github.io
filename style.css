@@ -689,3 +689,126 @@ body{
     background-color: #010B1D;
     color: white;
 }
+
+#footer{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 8vw;
+    padding-bottom: 10vw;
+    background-color: #010B1D;
+}
+
+#companyDetails{
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 4.5vw;
+    margin-left: 11vw;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+#moto{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9vw;
+    margin-bottom: 3vw;
+}
+
+#cdLinks{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#cdLinks a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2vw;
+    margin-right: 1.5vw;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#cdLinks a:hover{
+    color: #DA0000;
+}
+
+.links{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.links p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.8vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1vw;
+    font-size: 0.9vw;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+
+.links a:hover{
+    color: #DA0000;
+}
+
+#company{
+    margin-right: 10vw;
+}
+
+#services{
+    margin-right: 6.5vw;
+}
+
+#newsletter{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#nlHeading{
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.8vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+#nlMessage{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9vw;
+    margin-bottom: 2vw;
+}
+
+#getEmail{
+    width: 22vw;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    border: none;
+}
+
+#subscribe{
+    width: 24vw;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    background-color: #DA0000;
+    color: white;
+    border: none;
+}
