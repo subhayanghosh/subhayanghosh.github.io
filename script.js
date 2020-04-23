@@ -17,6 +17,7 @@ function changeBackColor(a){
     c[1].style.top = "14vw";
     b[1].style.color = "#000000";
 }
+
 var stop = 0;
 function counter(){
     if(stop == 0){
@@ -29,18 +30,7 @@ function counter(){
         stop = 1;
     }
 }
-function display1(){
-    document.getElementById("review2").style.display = "none";
-    document.getElementById("review3").style.display = "none";
-}
-function display2(){
-    document.getElementById("review1").style.display = "none";
-    document.getElementById("review3").style.display = "none";
-}
-function display3(){
-    document.getElementById("review1").style.display = "none";
-    document.getElementById("review2").style.display = "none";
-}
+
 var l;
 function shiftX(l){
     l.style.left = "0.4vw";

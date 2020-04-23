@@ -572,23 +572,25 @@ body{
     to{left: 95%}
 }
 
-#reviews{
+#carouselContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.review{
+.carouselSlide{
     padding-top: 3.5vw;
     padding-bottom: 1vw;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.review p{
+.carouselSlide p{
     margin: 0.3vw 0;
     font-size: 1.2vw;
     font-weight: 600;
@@ -625,7 +627,7 @@ body{
     margin: 0;
 }
 
-.tab{
+.carouselIndicator{
     padding: 0;
     width: 0.65vw;
     height: 0.65vw;
@@ -637,15 +639,21 @@ body{
     opacity: 0.3;
 }
 
-#review1{
-    
+.carouselIndicator.currentSlide{
+    opacity: 1;
 }
 
-#review2{
+#carouselSlide1{
+    position: relative;
+}
+
+#carouselSlide2{
+    position: relative;
     display: none;
 }
 
-#review3{
+#carouselSlide3{
+    position: relative;
     display: none;
 }
 
