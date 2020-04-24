@@ -31,6 +31,25 @@ function counter(){
     }
 }
 
+var track = document.getElementById("carouselTrack");
+var slide = Array.from(track.children);
+var nav = document.getElementById("carouselNav");
+var navButton = Array.from(nav.children);
+nav.addEventListener("click", e => {
+    var clickedButton = e.target.closest("button");
+    if (!clickedButton) return;
+    var currentSlide = track.querySelector(".currentSlide");
+    var currentButton = nav.querySelector(".currentSlide");
+    if (clickedButton == currentButton) return;
+    var targetIndex = navButton.findIndex(navButton => navButton == clickedButton);
+    var targetSlide = slide[targetIndex];
+    track.style.transform = "translateX(-" + targetSlide.offsetWidth*targetIndex + "px)";
+    currentSlide.classList.remove("currentSlide");
+    targetSlide.classList.add("currentSlide");
+    currentButton.classList.remove("currentSlide");
+    clickedButton.classList.add("currentSlide");
+})
+
 var l;
 function shiftX(l){
     l.style.left = "0.4vw";

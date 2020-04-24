@@ -534,7 +534,7 @@ body{
 
 #blog{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -573,21 +573,27 @@ body{
 }
 
 #carouselContainer{
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#carouselTrack{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 60%;
-    margin: 0 auto;
+    height: 100%;
+    transition: transform 0.4s ease;
 }
 
 .carouselSlide{
-    padding-top: 3.5vw;
-    padding-bottom: 1vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 0 0 100%;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
 }
 
 .carouselSlide p{
@@ -612,7 +618,7 @@ body{
     font-weight: bolder;
 }
 
-#blog ul{
+#carouselNav{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -620,11 +626,6 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-#blog ul li{
-    padding: 0;
-    margin: 0;
 }
 
 .carouselIndicator{
@@ -641,20 +642,6 @@ body{
 
 .carouselIndicator.currentSlide{
     opacity: 1;
-}
-
-#carouselSlide1{
-    position: relative;
-}
-
-#carouselSlide2{
-    position: relative;
-    display: none;
-}
-
-#carouselSlide3{
-    position: relative;
-    display: none;
 }
 
 #preFooter{
