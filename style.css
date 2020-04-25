@@ -17,6 +17,12 @@ body{
     align-items: center;
     background-color: #1C1B23;
     width: 100%;
+    -webkit-animation: fading 1s ease-in forwards;
+}
+
+@-webkit-keyframes fading{
+    from{opacity: 0}
+    to{opacity: 1}
 }
 
 #brand{
@@ -84,6 +90,23 @@ body{
     font-weight: bold;
     margin: 0;
     color: #9C9C9C;
+    position: relative;
+    -webkit-animation: fadeUpSlow 1s ease-in forwards;
+}
+
+@-webkit-keyframes fadeUpSlow{
+    from{opacity: 0; top: 5vw;}
+    to{opacity: 1; top: 0}
+}
+
+.fadeUp{
+    position: relative;
+    -webkit-animation: fadeUp 1s ease-in forwards;
+}
+
+@-webkit-keyframes fadeUp{
+    from{opacity: 0; top: 12vw;}
+    to{opacity: 1; top: 0}
 }
 
 #introParagraph2{
@@ -107,6 +130,16 @@ body{
     padding-top: 3.2vw;
     padding-bottom: 2.8vw;
     width: 27%;
+}
+
+.fadeRight{
+    position: relative;
+    -webkit-animation: fadeRight 1s ease-in forwards;
+}
+
+@-webkit-keyframes fadeRight{
+    from{opacity: 0; left: -10vw;}
+    to{opacity: 1; left: 0}
 }
 
 #message{
