@@ -1,3 +1,17 @@
+var header = document.querySelector(".header");
+var register = header.querySelector(".register");
+window.addEventListener("scroll", e => {
+    if(window.pageYOffset > 200){
+        header.classList.add("fixedNavbar");
+        register.classList.add("fixedRegister");
+    }
+    if(window.pageYOffset < 251){
+        header.classList.remove("fixedNavbar");
+        register.classList.remove("fixedRegister");
+        header.style.animation = "none";
+    }
+})
+
 var a;
 function changeColor(a){
     var b = a.children;
@@ -19,17 +33,20 @@ function changeBackColor(a){
 }
 
 var stop = 0;
-function counter(){
-    if(stop == 0){
-        var n = document.getElementById("clientNumber");
-        var x = 0;
-        var myCounter = setInterval(function(){if(x < 250){x++;n.innerHTML = x}},9);
-        var n1 = document.getElementById("caseNumber");
-        var y = 0;
-        var myCounter = setInterval(function(){if(y < 920){y = y+2;n1.innerHTML = y}},5);
-        stop = 1;
+window.addEventListener("scroll", e => {
+    if(window.pageYOffset > 1700){
+        if(stop == 0){
+            var n = document.getElementById("clientNumber");
+            var x = 0;
+            var myCounter = setInterval(function(){if(x < 250){x++;n.innerHTML = x}},9);
+            var n1 = document.getElementById("caseNumber");
+            var y = 0;
+            var myCounter = setInterval(function(){if(y < 920){y = y+2;n1.innerHTML = y}},5);
+            stop = 1;
+        }
+        console.log(window.pageYOffset);
     }
-}
+})
 
 var track = document.getElementById("carouselTrack");
 var slide = Array.from(track.children);

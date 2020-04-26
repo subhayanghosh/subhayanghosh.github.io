@@ -11,7 +11,7 @@ body{
     width: 100%;
 }
 
-#header{
+.header{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -23,6 +23,18 @@ body{
 @-webkit-keyframes fading{
     from{opacity: 0}
     to{opacity: 1}
+}
+
+.fixedNavbar{
+    position: fixed;
+    height: 4.2vw;
+    z-index: 3;
+    -webkit-animation: fadeDown 0.5s ease-in forwards;
+}
+
+@-webkit-keyframes fadeDown{
+    from{opacity: 0; transform: translateY(-4.2vw)}
+    to{opacity: 1; transform: translateY(0)}
 }
 
 #brand{
@@ -51,7 +63,7 @@ body{
     color: #BF0100;
 }
 
-#register{
+.register{
     background-color: white;
     padding: 1vw 2vw;
     margin-left: 9vw;
@@ -65,6 +77,11 @@ body{
     cursor: pointer;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+}
+
+.fixedRegister{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
 }
 
 #register:hover{
@@ -91,7 +108,7 @@ body{
     margin: 0;
     color: #9C9C9C;
     position: relative;
-    -webkit-animation: fadeUpSlow 1s ease-in forwards;
+    -webkit-animation: fadeUpSlow 1s ease  forwards;
 }
 
 @-webkit-keyframes fadeUpSlow{
@@ -101,7 +118,7 @@ body{
 
 .fadeUp{
     position: relative;
-    -webkit-animation: fadeUp 1s ease-in forwards;
+    -webkit-animation: fadeUp 1.2s ease forwards;
 }
 
 @-webkit-keyframes fadeUp{
