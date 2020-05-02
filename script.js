@@ -112,7 +112,3 @@ function shiftX(l){
 function shiftBackX(l){
     l.style.left = "0vw";
 }
-
-if(window.matchMedia("(max-width: 1199px)").matches){
-    document.getElementById("moto").innerHTML = "Seddo eiusmod tempor incididunt<br/>ut labore et dolore magna aliqua.<br/>consectetur pisicin elit, sed do<br/>eiusmod tempor."
-}
