@@ -9,7 +9,8 @@ window.addEventListener("scroll", e => {
     if(window.pageYOffset < 251){
         header.classList.remove("fixedNavbar");
         register.classList.remove("fixedRegister");
-        header.classList.add("header1");
+        header.classList.add("header");
+        document.body.querySelector(".header").style.animation = "none";
     }
 })
 
@@ -29,33 +30,59 @@ function changeColor(a){
     var c = b[0].children;
     c[1].style.backgroundColor = "#DA0000";
     c[1].style.color = "#FFFFFF";
-    c[1].style.left = "18vw";
-    c[1].style.top = "14.5vw";
     b[1].style.color = "#DA0000";
+    if (window.matchMedia("(max-width: 1199px)").matches){
+        c[1].style.left = "19vw";
+        c[1].style.top = "15vw";
+    }
+    else {
+        c[1].style.left = "18vw";
+        c[1].style.top = "14.5vw";
+    }
 }
 function changeBackColor(a){
     var b = a.children;
     var c = b[0].children;
     c[1].style.backgroundColor = "#FFFFFF";
     c[1].style.color = "#000000";
-    c[1].style.left = "18vw";
-    c[1].style.top = "14vw";
     b[1].style.color = "#000000";
+    if(window.matchMedia("(max-width: 1199px)").matches){
+        c[1].style.left = "19vw";
+        c[1].style.top = "14vw";
+    }
+    else {
+        c[1].style.left = "18vw";
+        c[1].style.top = "14vw";
+    }
 }
 
 var stop = 0;
 window.addEventListener("scroll", e => {
-    if(window.pageYOffset > 1700){
-        if(stop == 0){
-            var n = document.getElementById("clientNumber");
-            var x = 0;
-            var myCounter = setInterval(function(){if(x < 250){x++;n.innerHTML = x}},9);
-            var n1 = document.getElementById("caseNumber");
-            var y = 0;
-            var myCounter = setInterval(function(){if(y < 920){y = y+2;n1.innerHTML = y}},5);
-            stop = 1;
+    if(window.matchMedia("(max-width: 1199px)").matches){
+        if(window.pageYOffset > 1300){
+            if(stop == 0){
+                var n = document.getElementById("clientNumber");
+                var x = 0;
+                var myCounter = setInterval(function(){if(x < 250){x++;n.innerHTML = x}},9);
+                var n1 = document.getElementById("caseNumber");
+                var y = 0;
+                var myCounter = setInterval(function(){if(y < 920){y = y+2;n1.innerHTML = y}},5);
+                stop = 1;
+            }
         }
-        console.log(window.pageYOffset);
+    }
+    else{
+        if(window.pageYOffset > 1700){
+            if(stop == 0){
+                var n = document.getElementById("clientNumber");
+                var x = 0;
+                var myCounter = setInterval(function(){if(x < 250){x++;n.innerHTML = x}},9);
+                var n1 = document.getElementById("caseNumber");
+                var y = 0;
+                var myCounter = setInterval(function(){if(y < 920){y = y+2;n1.innerHTML = y}},5);
+                stop = 1;
+            }
+        }
     }
 })
 
@@ -84,4 +111,8 @@ function shiftX(l){
 }
 function shiftBackX(l){
     l.style.left = "0vw";
+}
+
+if(window.matchMedia("(max-width: 1199px)").matches){
+    document.getElementById("moto").innerHTML = "Seddo eiusmod tempor incididunt<br/>ut labore et dolore magna aliqua.<br/>consectetur pisicin elit, sed do<br/>eiusmod tempor."
 }

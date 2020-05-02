@@ -42,14 +42,6 @@ body{
     to{opacity: 1; transform: translateY(0)}
 }
 
-.header1{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    background-color: #1C1B23;
-    width: 100%;
-}
-
 #brand{
     padding-left: 5vw;
     padding-right: 21.2vw;
@@ -743,6 +735,7 @@ body{
     border-radius: 0.3vw;
     font-size: 1vw;
     font-weight: 600;
+    background-color: white;
     color: #DA0000;
     margin-right: 3vw;
     cursor: pointer;
@@ -886,17 +879,471 @@ body{
     position: fixed;
     z-index: 4;
     background-color: #DA0000;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 3vw;
+    width: 3.2vw;
+    height: 3.2vw;
+    border-radius: 4vw;
     cursor: pointer;
-    top: 41.9vw;
-    left: 93.5vw;
+    top: 88%;
+    left: 94.5%;
     -webkit-animation: fading 1s ease forwards;
 }
 
 .pageTop a{
     text-decoration: none;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 1199px){
+
+    .header{
+        height: 8.5vw;
+    }
+
+    .fixedNavbar{
+        height: 6.5vw;
+        -webkit-animation: fadeDown 0.3s ease forwards;
+    }
+
+    @-webkit-keyframes fadeDown{
+        from{opacity: 0; transform: translateY(-6.5vw)}
+        to{opacity: 1; transform: translateY(0)}
+    }
+    
+    #brand{
+        padding-right: 7vw;
+    }
+    
+    #brand a{
+        font-size: 3vw;
+    }
+
+    #navbar a{
+        font-size: 1.5vw;
+    }
+
+    #register{
+        font-size: 1.5vw;
+        font-weight: 600;
+        padding: 1.5vw 2.5vw;
+        margin-left: 5.5vw;
+    }
+
+    #introduction{
+        background-size: 100% 100%;
+    }
+
+    .introParagraph{
+        padding-left: 3vw;
+    }
+
+    #introParagraph1{
+        padding-top: 12vw;
+        padding-bottom: 2vw;
+        font-size: 3vw;
+        -webkit-animation: fadeUpSlow 1s ease  forwards;
+    }
+
+    @-webkit-keyframes fadeUpSlow{
+        from{opacity: 0; top: 10vw;}
+        to{opacity: 1; top: 0}
+    }
+
+    .fadeUp{
+        position: relative;
+        -webkit-animation: fadeUp 1.2s ease forwards;
+    }
+    
+    @-webkit-keyframes fadeUp{
+        from{opacity: 0; top: 17vw;}
+        to{opacity: 1; top: 0}
+    }
+
+    #introParagraph2{
+        font-size: 6vw;
+    }
+
+    #introParagraph3{
+        font-size: 6vw;
+    }
+
+    #subintro{
+        width: 32%;
+        margin-top: 5vw;
+        padding-left: 10vw;
+        padding-top: 4vw;
+        padding-right: 1vw;
+        padding-bottom: 3.5vw;
+    }
+
+    #message{
+        font-size: 1.7vw;
+    }
+
+    #number{
+        font-size: 4vw;
+    }
+
+    #lprHeading{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+
+    #animation{
+        width: 17%;
+        height: 0.5vw;
+        border-radius: 0.18vw;
+    }
+
+    .body{
+        width: 29%;
+        height: 23%;
+        margin: 1.5vw;
+    }
+
+    .image{
+        width: 29vw;
+        height: 22vw;
+        margin-bottom: 3vw;
+    }
+
+    .image img{
+        width: 29vw;
+        height: 22vw;
+    }
+
+    .body a{
+        font-size: 2.3vw;
+    }
+
+    .body p{
+        font-size: 1.42vw;
+        margin-bottom: 3vw;
+    }
+
+    .heartIcon{
+        position: absolute;
+        padding: 1.519vw 1.3vw;
+        left: 19vw;
+        top: 14vw;
+        width: 5vw;
+        height: 5vw;
+        font-size: 4vw;
+    }
+
+    #aboutJustLaw{
+        height: 78vw;
+    }
+
+    #ajlBody{
+        padding-left: 3vw;
+        padding-top: 7vw;
+        width: 40%;
+        padding-right: 1vw;
+    }
+
+    #animation1{
+        width: 40%;
+        height: 0.5vw;
+        border-radius: 0.2vw;
+        margin-left: 9vw;
+    }
+
+    #aboutParagraph1{
+        font-size: 4.5vw;
+    }
+
+    #aboutParagraph2{
+        font-size: 1.4vw;
+        margin-bottom: 7vw;
+    }
+
+    .countBox{
+        width: 12vw;
+        height: 9vw;
+        margin-right: 4vw;
+    }
+
+    .countBox p{
+        font-size: 1.5vw;
+    }
+    
+    .countNumber{
+        font-size: 3vw;
+    }
+    
+    #image1{
+        width: 80%;
+        height: 45vw;
+        border-width: 1.5vw;
+        margin-top: 6vw;
+    }
+
+    #image2{
+        position: absolute;
+        width: 75%;
+        height: 45vw;
+        left: 15vw;
+        top: 1vw;
+    }
+
+    #registration{
+        height: 70vw;
+    }
+
+    #consultation{
+        width: 60%;
+        padding-top: 7vw;
+        padding-bottom: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        top: -15vw;
+    }
+
+    #consultation p{
+        margin-left: 8vw;
+        font-size: 5vw;
+    }
+
+    #animation2{
+        width: 28%;
+        height: 0.5vw;
+        border-radius: 0.2vw;
+        margin-left: 21vw;
+        margin-top: 4vw;
+        margin-bottom: 6vw;
+    }
+
+    #nameAndPhone{
+        display: flex;
+        flex-flow: row;
+        margin-left: 0;
+    }
+
+    #name{
+        width: 60%;
+        height: 4vw;
+        margin-right: 5%;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    #phone{
+        width: 60%;
+        height: 4vw;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    #serviceAndEmail{
+        display: flex;
+        flex-flow: row;
+        width: auto;
+        margin-left: 0;
+    }
+
+    #service{
+        width: 60%;
+        margin-right: 5%;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+        border-radius: 0.5vw;
+    }
+    
+    #email{
+        width: 50%;
+        height: 4vw;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    #comments{
+        width: 90%;
+        margin-left: 0;
+        padding: 2vw 3vw;
+        border-radius: 0.5vw;
+        font-size: 1.8vw;
+    }
+
+    #submit{
+        margin-left: 0;
+        width: 100%;
+        padding: 2vw;
+        border-radius: 0.5vw;
+    }
+
+    #tmHeading{
+        font-size: 5vw;
+    }
+
+    #animation3{
+        width: 17%;
+        height: 0.5vw;
+        border-radius: 0.2vw;
+    }
+
+    #tmBody{
+        padding-bottom: 13vw;
+    }
+
+    .memberDetails{
+        width: 29.2%;
+        height: 20%;
+        margin: 1.5vw;
+    }
+
+    .memberDetails a{
+        font-size: 2.5vw;
+    }
+
+    .memberDetails p{
+        font-size: 1.5vw;
+    }
+
+    #blog{
+        padding-top: 2vw;
+        padding-bottom: 8vw;
+    }
+
+    #blogHeading{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+
+    #animation4{
+        width: 17%;
+        height: 0.5vw;
+        border-radius: 0.2vw;
+    }
+
+    #whiteBox4{
+        height: 0.5vw;
+    }
+
+    #carouselContainer{
+        max-width: 70%;
+    }
+
+    .carouselSlide p{
+        font-size: 1.5vw;
+    }
+
+    .authorImage{
+        width: 7vw;
+        height: 7vw;
+        margin-top: 3vw;
+        margin-bottom: 2vw
+    }
+
+    .authorName{
+        font-size: 2vw;
+    }
+
+    .carouselIndicator{
+        width: 1vw;
+        height: 1vw;
+        margin: 0 0.5vw;
+        border-radius: 50%;
+    }
+
+    #loan{
+        padding: 9vw 0;
+        margin-left: 3vw;
+        margin-right: 5vw;
+    }
+
+    #loan h2{
+        font-size: 4vw;
+    }
+
+    #loan p{
+        font-size: 1.7vw;
+    }
+
+    #getStarted{
+        padding: 2.2vw 3vw;
+        border-radius: 0.5vw;
+        font-size: 1.4vw;
+    }
+
+    #footer{
+        padding-top: 10vw;
+        padding-bottom: 12vw;
+    }
+
+    #companyDetails{
+        margin-left: 3vw;
+    }
+
+    #logo{
+        margin-bottom: 2vw;
+        font-size: 3vw;
+    }
+
+    #moto{
+        margin-bottom: 5vw;
+        font-size: 1.4vw;
+    }
+
+    #cdLinks a{
+        font-size: 3vw;
+        margin-right: 2vw;
+    }
+
+    .links p{
+        font-size: 1.8vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .links a{
+        font-size: 1.4vw;
+        margin-bottom: 2vw;
+    }
+
+    #nlHeading{
+        margin-bottom: 2.5vw;
+        font-size: 1.8vw;
+    }
+
+    #nlMessage{
+        font-size: 1.4vw;
+        margin-bottom: 3.5vw;
+    }
+
+    #getEmail{
+        width: 22vw;
+        padding: 1.7vw 2.5vw;
+        font-size: 1.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    #subscribe{
+        width: 27vw;
+        padding: 1.7vw 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .pageTop{
+        width: 5vw;
+        height: 5vw;
+        border-radius: 6vw;
+        top: 86%;
+        left: 92%;
+    }
+    
+    .pageTop a{
+        font-size: 2.5vw;
+    }
+
 }
