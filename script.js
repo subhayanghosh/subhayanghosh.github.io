@@ -1,16 +1,19 @@
 var header = document.getElementById("header");
 var register = document.getElementById("register");
 window.addEventListener("scroll", e => {
-    if(window.pageYOffset > 200){
+    if(window.pageYOffset > 250){
         header.classList.add("fixedNavbar");
+        document.body.querySelector(".fixedNavbar").style.animation = "fadeDown 0.3s ease forwards";
         register.classList.add("fixedRegister");
         header.classList.remove("header");
+        toggledNavbar.style.position = "fixed";
     }
     if(window.pageYOffset < 251){
         header.classList.remove("fixedNavbar");
         register.classList.remove("fixedRegister");
         header.classList.add("header");
         document.body.querySelector(".header").style.animation = "none";
+        toggledNavbar.style.position = "absolute";
     }
 })
 
@@ -112,3 +115,18 @@ function shiftX(l){
 function shiftBackX(l){
     l.style.left = "0vw";
 }
+
+var flag = 0;
+var hamburger = document.getElementById("hamburger");
+var toggledNavbar = document.getElementById("toggledNavbar");
+hamburger.addEventListener("click", e => {
+    toggledNavbar.style.display = "unset";
+    if(flag % 2 == 0){
+        toggledNavbar.style.animation = "toggleDown 0.3s ease forwards";
+        flag ++;
+    }
+    else{
+        toggledNavbar.style.animation = "toggleUp 0.3s ease forwards";
+        flag++;
+    }
+})
