@@ -1576,11 +1576,11 @@ body{
 
     #ajlImage{
         padding-left: 5vw;
-        width: 100%;
+        width: 95%;
     }
 
     #image1{
-        width: 48%;
+        width: 50%;
         height: 60vw;
         border-width: 2vw;
         margin-top: 6vw;
@@ -1588,7 +1588,7 @@ body{
 
     #image2{
         position: absolute;
-        width: 48%;
+        width: 50%;
         height: 60vw;
         left: 44vw;
         top: 0;
@@ -1662,7 +1662,7 @@ body{
 
     #submit{
         width: 100%;
-        padding: 3vw;
+        padding: 3vw 0;
     }
     
 }
