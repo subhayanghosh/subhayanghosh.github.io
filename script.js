@@ -141,4 +141,5 @@ hamburger.addEventListener("click", e => {
 
 if(window.matchMedia("(max-width: 991px)").matches){
     document.getElementById("aboutParagraph2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut."
+    document.getElementById("loan").innerHTML = "<h2>Get Your Answer In Just<br/>5 Minutes</h2><p>Checking your loan options does not affect your credit<br/>scores!</p>"
 }

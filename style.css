@@ -1479,6 +1479,10 @@ body{
         font-size: 5vw;
     }
 
+    #legalPracticeArea{
+        padding-bottom: 5vw;
+    }
+
     #animation{
         width: 20%;
         height: 0.6vw;
@@ -1492,13 +1496,13 @@ body{
     .body{
         width: 45%;
         height: 35%;
-        margin-left: 6vw;
+        margin-left: 12vw;
         padding-bottom: 0.5vw;
-        margin-bottom: 5vw;
+        margin-bottom: 6vw;
     }
 
     #body1{
-        margin-left: 48vw;
+        margin-left: 40vw;
     }
 
     .image{
@@ -1663,6 +1667,135 @@ body{
     #submit{
         width: 100%;
         padding: 3vw 0;
+    }
+
+    #blog{
+        height: 60vw;
+        padding-bottom: 10vw;
+    }
+
+    #animation4{
+        width: 20%;
+        height: 0.6vw;
+        border-radius: 0.3vw;
+        margin-bottom: 1vw;
+    }
+
+    #whiteBox4{
+        height: 0.6vw;
+    }
+
+    #carouselContainer{
+        max-width: 90%;
+    }
+
+    .carouselSlide p{
+        font-size: 2vw;
+    }
+
+    .authorImage{
+        width: 9vw;
+        height: 9vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw
+    }
+
+    #carouselNav{
+        margin-top: 2vw;
+    }
+
+    .carouselIndicator{
+        width: 1.3vw;
+        height: 1.3vw;
+        margin: 0 0.5vw;
+        border-radius: 50%;
+    }
+
+    #loan{
+        margin-left: 5vw;
+        margin-right: 8vw;
+    }
+
+    #loan p{
+        font-size: 2.1vw;
+        margin: 2vw 0;
+    }
+
+    #getStarted{
+        padding: 3vw 4vw;
+        border-radius: 0.5vw;
+        font-size: 1.8vw;
+    }
+
+    #companyDetails{
+        margin-left: 5vw;
+    }
+
+    #logo{
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+
+    #moto{
+        margin-bottom: 5vw;
+        font-size: 2vw;
+    }
+
+    #cdLinks a{
+        font-size: 4vw;
+        margin-right: 3vw;
+    }
+
+    .links{
+        margin-left: 4vw;
+    }
+
+    .links p{
+        font-size: 2.5vw;
+    }
+
+    .links a{
+        font-size: 2vw;
+    }
+
+    #newsletter{
+        margin-top: 5vw;
+        margin-left: 5vw;
+    }
+
+    #nlHeading{
+        margin-bottom: 2.5vw;
+        font-size: 2.5vw;
+    }
+
+    #nlMessage{
+        font-size: 2vw;
+        margin-bottom: 4vw;
+    }
+
+    #getEmail{
+        width: 30vw;
+        padding: 2vw 2.5vw;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    #subscribe{
+        width: 35vw;
+        padding: 2vw 2.5vw;
+        font-size: 2vw;
+    }
+
+    .pageTop{
+        width: 6.5vw;
+        height: 6.5vw;
+        border-radius: 7.5vw;
+        top: 86%;
+        left: 89%;
+    }
+    
+    .pageTop a{
+        font-size: 3vw;
     }
     
 }
