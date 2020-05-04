@@ -429,6 +429,10 @@ body{
     margin-bottom: 5vw;
 }
 
+#consultation form{
+    width: 100%;
+}
+
 #nameAndPhone{
     display: flex;
     flex-flow: row wrap;
@@ -1100,26 +1104,30 @@ body{
     }
 
     #consultation{
-        width: 60%;
+        width: 55%;
         padding-top: 7vw;
         padding-bottom: 4vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
         top: -15vw;
     }
 
     #consultation p{
-        margin-left: 8vw;
-        font-size: 5vw;
+        margin-left: 7.5vw;
+        font-size: 4.8vw;
     }
 
     #animation2{
-        width: 28%;
+        width: 30%;
         height: 0.5vw;
         border-radius: 0.2vw;
-        margin-left: 21vw;
+        margin-left: 20vw;
         margin-top: 4vw;
-        margin-bottom: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    #consultation form{
+        width: 100%;
     }
 
     #nameAndPhone{
@@ -1152,7 +1160,6 @@ body{
     #serviceAndEmail{
         display: flex;
         flex-flow: row;
-        width: auto;
         margin-left: 0;
     }
 
@@ -1177,7 +1184,7 @@ body{
     }
 
     #comments{
-        width: 90%;
+        width: 89%;
         margin-left: 0;
         padding: 2vw 3vw;
         border-radius: 0.5vw;
@@ -1431,4 +1438,231 @@ body{
         color: #BF0100;
     }
 
+    #introParagraph1{
+        font-size: 3.5vw;
+        -webkit-animation: fadeUpSlow 0.6s ease  forwards;
+    }
+
+    @-webkit-keyframes fadeUpSlow{
+        from{opacity: 0; top: 5vw;}
+        to{opacity: 1; top: 0}
+    }
+
+    .fadeUp{
+        position: relative;
+        -webkit-animation: fadeUp 1s ease forwards;
+    }
+
+    @-webkit-keyframes fadeUp{
+        from{opacity: 0; top: 7.5vw;}
+        to{opacity: 1; top: 0}
+    }
+
+    #introParagraph2{
+        font-size: 6.5vw;
+    }
+
+    #introParagraph3{
+        font-size: 6.5vw;
+    }
+
+    #subintro{
+        width: 38%;
+        padding-right: 4vw;
+    }
+
+    #message{
+        font-size: 2vw;
+    }
+
+    #number{
+        font-size: 5vw;
+    }
+
+    #animation{
+        width: 20%;
+        height: 0.6vw;
+        border-radius: 0.25vw;
+    }
+
+    #lprBody{
+        display: unset;
+    }
+
+    .body{
+        width: 45%;
+        height: 35%;
+        margin-left: 6vw;
+        padding-bottom: 0.5vw;
+        margin-bottom: 5vw;
+    }
+
+    #body1{
+        margin-left: 48vw;
+    }
+
+    .image{
+        width: 45vw;
+        height: 30vw;
+        margin-bottom: 3vw;
+    }
+
+    .image img{
+        width: 45vw;
+        height: 30vw;
+    }
+
+    .body a{
+        font-size: 3vw;
+    }
+
+    .body p{
+        font-size: 2vw;
+        margin-bottom: 4vw;
+    }
+
+    .heartIcon{
+        position: absolute;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        left: 32vw;
+        top: 20vw;
+        font-size: 5vw;
+    }
+
+    #aboutJustLaw{
+        display: unset;
+        background-color: #F5F5F5;
+        padding-top: 5vw;
+        height: 160vw;
+    }
+
+    #ajlBody{
+        width: 85%;
+        margin-bottom: 10vw;
+        padding-left: 6vw;
+    }
+
+    #aboutParagraph1{
+        font-size: 5vw;
+    }
+    
+    #aboutParagraph2{
+        font-size: 2vw;
+    }
+
+    #animation1{
+        width: 24%;
+        height: 0.7vw;
+        border-radius: 0.3vw;
+        margin-left: 8vw;
+    }
+
+    .countBox{
+        width: 18vw;
+        height: 12vw;
+        margin-right: 4vw;
+    }
+
+    .countBox p{
+        font-size: 2vw;
+    }
+    
+    .countNumber{
+        font-size: 4vw;
+    }
+
+    #ajlImage{
+        padding-left: 5vw;
+        width: 100%;
+    }
+
+    #image1{
+        width: 48%;
+        height: 60vw;
+        border-width: 2vw;
+        margin-top: 6vw;
+    }
+
+    #image2{
+        position: absolute;
+        width: 48%;
+        height: 60vw;
+        left: 44vw;
+        top: 0;
+    }
+
+    #registration{
+        height: 85vw;
+    }
+
+    #consultation{
+        width: 83%;
+        padding-top: 7vw;
+        padding-bottom: 4vw;
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
+        top: -20vw;
+    }
+
+    #consultation p{
+        margin-left: 20vw;
+    }
+
+    #animation2{
+        width: 25%;
+        height: 0.8vw;
+        border-radius: 0.4vw;
+        margin-left: 30vw;
+        margin-bottom: 5vw;
+    }
+
+    #consultation form{
+        width: 100%;
+    }
+
+    #name{
+        height: 5vw;
+        margin-right: 5%;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+    }
+
+    #phone{
+        height: 5vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+    }
+
+    #service{
+        width: 58%;
+        margin-right: 5%;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+    
+    #email{
+        height: 5vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+
+    #comments{
+        width: 88%;
+        height: 8vw;
+        padding: 5vw 5vw;
+        font-size: 2.3vw;
+    }
+
+    #submit{
+        width: 100%;
+        padding: 3vw;
+    }
+    
 }

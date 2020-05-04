@@ -34,13 +34,17 @@ function changeColor(a){
     c[1].style.backgroundColor = "#DA0000";
     c[1].style.color = "#FFFFFF";
     b[1].style.color = "#DA0000";
-    if (window.matchMedia("(max-width: 1199px)").matches){
+    if (window.matchMedia("(min-width: 1200px)").matches){
+        c[1].style.left = "18vw";
+        c[1].style.top = "14.5vw";
+    }
+    else if (window.matchMedia("(min-width: 992px)").matches){
         c[1].style.left = "19vw";
         c[1].style.top = "15vw";
     }
-    else {
-        c[1].style.left = "18vw";
-        c[1].style.top = "14.5vw";
+    else if (window.matchMedia("(min-width: 768px)").matches){
+        c[1].style.left = "32vw";
+        c[1].style.top = "21vw";
     }
 }
 function changeBackColor(a){
@@ -49,13 +53,17 @@ function changeBackColor(a){
     c[1].style.backgroundColor = "#FFFFFF";
     c[1].style.color = "#000000";
     b[1].style.color = "#000000";
-    if(window.matchMedia("(max-width: 1199px)").matches){
+    if (window.matchMedia("(min-width: 1200px)").matches){
+        c[1].style.left = "18vw";
+        c[1].style.top = "14.5vw";
+    }
+    else if(window.matchMedia("(min-width: 992px)").matches){
         c[1].style.left = "19vw";
         c[1].style.top = "14vw";
     }
-    else {
-        c[1].style.left = "18vw";
-        c[1].style.top = "14vw";
+    else if (window.matchMedia("(min-width: 768px)").matches){
+        c[1].style.left = "32vw";
+        c[1].style.top = "20vw";
     }
 }
 
@@ -130,3 +138,7 @@ hamburger.addEventListener("click", e => {
         flag++;
     }
 })
+
+if(window.matchMedia("(max-width: 991px)").matches){
+    document.getElementById("aboutParagraph2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut."
+}
