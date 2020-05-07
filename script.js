@@ -46,6 +46,10 @@ function changeColor(a){
         c[1].style.left = "32vw";
         c[1].style.top = "21vw";
     }
+    else{
+        c[1].style.left = "65vw";
+        c[1].style.top = "45vw";
+    }
 }
 function changeBackColor(a){
     var b = a.children;
@@ -64,6 +68,10 @@ function changeBackColor(a){
     else if (window.matchMedia("(min-width: 768px)").matches){
         c[1].style.left = "32vw";
         c[1].style.top = "20vw";
+    }
+    else{
+        c[1].style.left = "65vw";
+        c[1].style.top = "42vw";
     }
 }
 
@@ -142,4 +150,8 @@ hamburger.addEventListener("click", e => {
 if(window.matchMedia("(max-width: 991px)").matches){
     document.getElementById("aboutParagraph2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut."
     document.getElementById("loan").innerHTML = "<h2>Get Your Answer In Just<br/>5 Minutes</h2><p>Checking your loan options does not affect your credit<br/>scores!</p>"
+}
+
+if(window.matchMedia("(max-width: 600px)").matches){
+    document.body.querySelector(".body").removeAttribute("id");
 }
