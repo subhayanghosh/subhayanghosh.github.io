@@ -1,0 +1,1 @@
+A static marketing web-page based on a Lawsuit Website, built using HTML, CSS, and Vanilla JavaScript as a minor side project to test Front-end skills. Planning to link the registration form with a database to store user data.
